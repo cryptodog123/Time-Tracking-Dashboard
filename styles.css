@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(235, 46%, 20%);
+  color: hsl(236, 100%, 87%);
+  font-family: "Rubik", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.centered-box {
+  padding: 5px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2);
+  gap: 20px;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  padding-top: 20%;
+  border-radius: 12px;
+  position: relative;
+}
+
+/******************/
+/* Boxes */
+.work-box {
+  background-color: hsl(15, 100%, 70%);
+}
+.play-box {
+  background-color: hsl(195, 74%, 62%);
+}
+.study-box {
+  background-color: hsl(348, 100%, 68%);
+}
+.exercise-box {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social-box {
+  background-color: hsl(264, 64%, 52%);
+}
+.self-care-box {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.inner-box {
+  background-color: hsl(226, 43%, 10%);
+  border-radius: 12px;
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.edit-icon-outline {
+  cursor: pointer;
+}
+
+.inner-box:hover {
+  background-color: hsla(234, 31%, 32%, 0.927);
+}
+
+.profile-box {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-color: hsl(226, 43%, 10%);
+  border-radius: 12px;
+}
+
+.inner-profile-box {
+  padding: 20px;
+  height: 70%;
+  border-radius: 12px;
+  background-color: hsl(246, 80%, 60%);
+  max-width: 100%;
+}
+/******************/
+
+.user-img {
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  margin-bottom: 30px;
+}
+
+.small-text {
+  font-size: 12px;
+  margin-bottom: 5px;
+  opacity: 0.7;
+}
+
+.user-name {
+  max-width: 50%;
+  word-wrap: break-word;
+  line-height: 1.3;
+  font-weight: 300;
+  font-size: 33px;
+}
+
+/******************/
+
+.timeframe-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: hsl(235, 45%, 61%);
+  align-items: flex-start;
+}
+
+.timeframe {
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.active {
+  color: hsl(236, 100%, 87%);
+}
+
+.timeframe:hover {
+  color: hsl(236, 100%, 87%);
+}
+
+/******************/
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.time-spent {
+  font-size: 44px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.time-spent-last-week {
+  font-size: 12px;
+}
