@@ -3,31 +3,8 @@
 const boxes = document.querySelectorAll(".inner-box");
 const inner_box_arr = Array.from(boxes);
 const allTimeFrames = document.querySelectorAll(".timeframe");
-// Data that gets changed depending on time-frame
 
 const totalTimeSpent = document.querySelector(".total-time-spent");
-
-// USER CLICKS NEW TIME-FRAME
-// CLEAR OLD MARKUP
-// RENDER NEW MARKUP
-
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-// RENDERING INITIAL MARKUP (WEEKLY TIMEFRAME)
-////////////////////////////////////////////////////////
-
-// const renderInitMarkup = async function () {
-//   try {
-//     const res = await fetch("data.json");
-//     const data = await res.json();
-//     console.log();
-//   } catch (err) {
-//     console.error(err);
-//   }
-// };
-
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
 
 class ProfileDetails {
   // Current Timeframe
